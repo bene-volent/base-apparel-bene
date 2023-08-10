@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header class="hero__header">
+      <a href="/" class="hero__logo">
+        <h2 class="sr-only">Base Apparel</h2>
+        <img class="hero__logo_img" src="./images/logo.svg" alt="Base Apparel">
+      </a>
+
+    </header>
+
+
+    <picture class="hero__picture">
+      <source media="(min-width:900px)" srcset="./images/hero-desktop.jpg">
+      <img class="hero__img" src="./images/hero-mobile.jpg" alt="Hero Image">
+    </picture>
+
+    <section class="hero__section">
+      <h1 class="hero__heading"><span class="heading heading--accent">We're</span> <span class="heading">coming</span>
+        <span class="heading">soon</span>
+      </h1>
+      <p class="hero__text">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="hero__form">
+        <input type="email" autocomplete="off" class="form__input" placeholder="Email Address" id="email" name="email" required>
+        <p class="form__message"></p>
+        <label for="email" class="form__label">Email Address</label>
+        <button type="submit" class="form__submit"><img src="./images/icon-arrow.svg" alt="Arrow Icon"></button>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>
