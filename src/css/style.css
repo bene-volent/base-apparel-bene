@@ -136,10 +136,13 @@ main {
   grid-template-rows: auto auto 1fr;
   grid-template-columns: none;
   --_padding-inline: var(--size-9);
+  max-width: 600px;
+  margin-inline: auto;
 }
 @media (width > 900px) {
   main {
     --_padding-inline: var(--size-36);
+    max-width: none;
     margin-inline: auto;
     grid-template-rows: none;
     grid-template-columns: 1fr auto;
