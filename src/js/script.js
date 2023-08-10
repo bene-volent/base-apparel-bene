@@ -6,7 +6,7 @@ email.addEventListener("invalid", (event) => {
     event.preventDefault()
     message.classList.remove("show")
 
-    message.textContent = "Please enter a valid message"
+    message.textContent = "Please enter a valid email!"
     email.classList.add("invalid")
     console.log(event)
 })
